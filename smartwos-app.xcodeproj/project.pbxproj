@@ -14,6 +14,7 @@
 		D1F8A11D37431D121E475AAB /* Scene+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8ABEA4BB85F27ABF84E2F /* Scene+ViewController.swift */; };
 		D1F8A1FE4ACA4B199BEECEB2 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A067A645A63B92514834 /* UINavigationController+Rx.swift */; };
 		D1F8A2F64EDF879C00B82677 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8ACE877CEFB11DED770D7 /* Scene.swift */; };
+		D1F8A32905BEE1E851B731EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A84237B51456CB143E3C /* .gitignore */; };
 		D1F8A44D49F175E804F5EB29 /* TaskServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8ACDB85409499A30F6492 /* TaskServiceType.swift */; };
 		D1F8A6AE6E5F3C0C8F871A37 /* EditTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AECA7553182D089E3483 /* EditTaskViewModel.swift */; };
 		D1F8A746D14C9ACF8A366080 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA17768E58275827A162 /* TasksViewController.swift */; };
@@ -57,6 +58,7 @@
 		D1F8A4883B37363AE4E4C1A6 /* TasksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		D1F8A7403446C1BE64738793 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		D1F8A78DBEAA4A78072810FC /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		D1F8A84237B51456CB143E3C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		D1F8A97476B19E66E16027AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D1F8AA17768E58275827A162 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D1F8AA2D4C54944F344D30AB /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				D1F8A97476B19E66E16027AC /* Podfile */,
 				2CE9A03F8067B07BB91CC8F7 /* Pods */,
 				FC4E7A7E471C72B670672BFD /* Frameworks */,
+				D1F8A84237B51456CB143E3C /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,6 +316,7 @@
 				F5D149712127F41E0064C9BE /* Assets.xcassets in Resources */,
 				F5D1496F2127F41D0064C9BE /* Main.storyboard in Resources */,
 				D1F8A85BDDC2029816BB312E /* Podfile in Resources */,
+				D1F8A32905BEE1E851B731EE /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
