@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A792487D1D6A9E11412A5156 /* Pods_smartwos_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DC4E29A0F315784A76AE10 /* Pods_smartwos_appTests.framework */; };
+		D1F8A85BDDC2029816BB312E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A97476B19E66E16027AC /* Podfile */; };
+		F47D4CDC1DA953508D7D72B4 /* Pods_smartwos_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C518607D70AF87B1C310BB79 /* Pods_smartwos_app.framework */; };
 		F5D1496A2127F41D0064C9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D149692127F41D0064C9BE /* AppDelegate.swift */; };
 		F5D1496C2127F41D0064C9BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D1496B2127F41D0064C9BE /* ViewController.swift */; };
 		F5D1496F2127F41D0064C9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D1496D2127F41D0064C9BE /* Main.storyboard */; };
@@ -26,6 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19CCB3BEFC894A3ECCD2D26A /* Pods-smartwos-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-appTests/Pods-smartwos-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		721A6E2FC0013C821F6E9074 /* Pods-smartwos-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-appTests/Pods-smartwos-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		75230A8233C1BD07E4911538 /* Pods-smartwos-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app.debug.xcconfig"; sourceTree = "<group>"; };
+		8CC385123DDF9A3D9AF01BE5 /* Pods-smartwos-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app.release.xcconfig"; sourceTree = "<group>"; };
+		B0DC4E29A0F315784A76AE10 /* Pods_smartwos_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartwos_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C518607D70AF87B1C310BB79 /* Pods_smartwos_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartwos_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F8A97476B19E66E16027AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F5D149662127F41D0064C9BE /* smartwos-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smartwos-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D149692127F41D0064C9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D1496B2127F41D0064C9BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47D4CDC1DA953508D7D72B4 /* Pods_smartwos_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A792487D1D6A9E11412A5156 /* Pods_smartwos_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE9A03F8067B07BB91CC8F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75230A8233C1BD07E4911538 /* Pods-smartwos-app.debug.xcconfig */,
+				8CC385123DDF9A3D9AF01BE5 /* Pods-smartwos-app.release.xcconfig */,
+				19CCB3BEFC894A3ECCD2D26A /* Pods-smartwos-appTests.debug.xcconfig */,
+				721A6E2FC0013C821F6E9074 /* Pods-smartwos-appTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F5D1495D2127F41D0064C9BE = {
 			isa = PBXGroup;
 			children = (
 				F5D149682127F41D0064C9BE /* smartwos-app */,
 				F5D1497D2127F41E0064C9BE /* smartwos-appTests */,
 				F5D149672127F41D0064C9BE /* Products */,
+				D1F8A97476B19E66E16027AC /* Podfile */,
+				2CE9A03F8067B07BB91CC8F7 /* Pods */,
+				FC4E7A7E471C72B670672BFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +122,15 @@
 			path = "smartwos-appTests";
 			sourceTree = "<group>";
 		};
+		FC4E7A7E471C72B670672BFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C518607D70AF87B1C310BB79 /* Pods_smartwos_app.framework */,
+				B0DC4E29A0F315784A76AE10 /* Pods_smartwos_appTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D149832127F41E0064C9BE /* Build configuration list for PBXNativeTarget "smartwos-app" */;
 			buildPhases = (
+				41EB9175FC53BB4CA94150A8 /* [CP] Check Pods Manifest.lock */,
 				F5D149622127F41D0064C9BE /* Sources */,
 				F5D149632127F41D0064C9BE /* Frameworks */,
 				F5D149642127F41D0064C9BE /* Resources */,
+				1DD07178FB60EA3D29A22472 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D149862127F41E0064C9BE /* Build configuration list for PBXNativeTarget "smartwos-appTests" */;
 			buildPhases = (
+				87BFC63B124F150CF0E662B2 /* [CP] Check Pods Manifest.lock */,
 				F5D149762127F41E0064C9BE /* Sources */,
 				F5D149772127F41E0064C9BE /* Frameworks */,
 				F5D149782127F41E0064C9BE /* Resources */,
+				CE5C5FD8749966ABED44E0D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +219,7 @@
 				F5D149742127F41E0064C9BE /* LaunchScreen.storyboard in Resources */,
 				F5D149712127F41E0064C9BE /* Assets.xcassets in Resources */,
 				F5D1496F2127F41D0064C9BE /* Main.storyboard in Resources */,
+				D1F8A85BDDC2029816BB312E /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +231,113 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DD07178FB60EA3D29A22472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41EB9175FC53BB4CA94150A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartwos-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87BFC63B124F150CF0E662B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartwos-appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5C5FD8749966ABED44E0D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smartwos-appTests/Pods-smartwos-appTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smartwos-appTests/Pods-smartwos-appTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5D149622127F41D0064C9BE /* Sources */ = {
@@ -356,6 +503,7 @@
 		};
 		F5D149842127F41E0064C9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75230A8233C1BD07E4911538 /* Pods-smartwos-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +522,7 @@
 		};
 		F5D149852127F41E0064C9BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC385123DDF9A3D9AF01BE5 /* Pods-smartwos-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +541,7 @@
 		};
 		F5D149872127F41E0064C9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CCB3BEFC894A3ECCD2D26A /* Pods-smartwos-appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +563,7 @@
 		};
 		F5D149882127F41E0064C9BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721A6E2FC0013C821F6E9074 /* Pods-smartwos-appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
