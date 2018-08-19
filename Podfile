@@ -2,6 +2,9 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'smartwos-app' do
+  #Alamofire
+  pod 'Alamofire', '~> 4.7'
+
   # core RxSwift
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
@@ -10,13 +13,16 @@ target 'smartwos-app' do
   # Community projects
   pod 'Action', '~> 3.4'
   pod 'NSObject+Rx', '~> 4.1'
-  
+
   # Realm database
   pod 'RealmSwift', '~> 3.0'
   pod 'RxRealm', '~> 0.7'
 end
 
-  target 'smartwos-appTests' do
+target 'smartwos-appTests' do
+  #Alamofire
+  pod 'Alamofire', '~> 4.7'
+
   # core RxSwift
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
