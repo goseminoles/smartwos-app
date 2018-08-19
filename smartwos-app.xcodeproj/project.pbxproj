@@ -14,10 +14,13 @@
 		D1F8A280F354513404A3B378 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3F67FE101CB9837EAB2 /* Config.swift */; };
 		D1F8A32905BEE1E851B731EE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A84237B51456CB143E3C /* .gitignore */; };
 		D1F8A445C3CFD75F129934FF /* TaskServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AE2FFDFE972A5FC9A601 /* TaskServiceType.swift */; };
+		D1F8A5356EC20AACF48C9770 /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A9DDCB9FF5C92A2A6B3E /* Signin.swift */; };
 		D1F8A591F99F9B3991C61672 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AE26C2EF12B3C107CEEB /* EditTaskViewController.swift */; };
 		D1F8A592BD0AFE85E3D8AA0A /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A1442BF22239A90F2CB1 /* ConfigManager.swift */; };
 		D1F8A625AD6B265CEEA42979 /* EditTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AAFF4C3D8913CE782D67 /* EditTaskViewModel.swift */; };
 		D1F8A649DD5F2D03D069FC96 /* LabelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AD3A5D1C86B7D2F915C0 /* LabelService.swift */; };
+		D1F8A6A9BBEEB5C9C66A19A8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A30601C5D104C5A27437 /* Models.swift */; };
+		D1F8A6EEF9ADC5F30393F722 /* SigninService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AC884BFF829B24D50F57 /* SigninService.swift */; };
 		D1F8A85BDDC2029816BB312E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D1F8A97476B19E66E16027AC /* Podfile */; };
 		D1F8A8710811EFFCC9821C40 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8AB300E7CD88E3B76780C /* Config.plist */; };
 		D1F8A878B4BCFA0FF8790D5D /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3412C0A1682670BCC17 /* SceneTransitionType.swift */; };
@@ -64,6 +67,7 @@
 		D1F8A1442BF22239A90F2CB1 /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 		D1F8A291541C5AAE2CEDDC75 /* LabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
 		D1F8A2B6CAB2E5079E628252 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		D1F8A30601C5D104C5A27437 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D1F8A3412C0A1682670BCC17 /* SceneTransitionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
 		D1F8A3E32AC28A83EB5EFD5F /* TaskItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		D1F8A3F67FE101CB9837EAB2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -75,9 +79,11 @@
 		D1F8A8EBAA88DD32C85E4B26 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D1F8A93BDFAB7319AABB5734 /* TasksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		D1F8A97476B19E66E16027AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D1F8A9DDCB9FF5C92A2A6B3E /* Signin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
 		D1F8AA8740E2F2639F001AA8 /* Scene+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scene+ViewController.swift"; sourceTree = "<group>"; };
 		D1F8AAFF4C3D8913CE782D67 /* EditTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewModel.swift; sourceTree = "<group>"; };
 		D1F8AB300E7CD88E3B76780C /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.plist; sourceTree = "<group>"; };
+		D1F8AC884BFF829B24D50F57 /* SigninService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninService.swift; sourceTree = "<group>"; };
 		D1F8AD3A5D1C86B7D2F915C0 /* LabelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelService.swift; sourceTree = "<group>"; };
 		D1F8AD4CB8EC4005714E8726 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		D1F8ADB1352E3B97B7E5A64B /* Config.Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.Example.plist; sourceTree = "<group>"; };
@@ -125,6 +131,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D1F8A04E153FE19B54D3C6F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D1F8A0ACFC30E2794A695325 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A75E1C6A972B47A69E71 /* Models */,
+				D1F8A0D7CB87D877041AF54A /* Services */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
 		D1F8A0C12D1FF0E3C3E84106 /* Labeling */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +177,14 @@
 			path = QuickTodo;
 			sourceTree = "<group>";
 		};
+		D1F8A0D7CB87D877041AF54A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8AC884BFF829B24D50F57 /* SigninService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		D1F8A0D95D3CE18FD0822C2D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +202,8 @@
 				D1F8A0C24FA065DA8D9FAD5B /* Clients */,
 				D1F8A640DAC4CF65A564D774 /* Helpers */,
 				D1F8A7E61D1E5F1445851280 /* Stories */,
+				D1F8A40C23BCD694A238FEE4 /* Models */,
+				D1F8A0ACFC30E2794A695325 /* Signin */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -202,6 +234,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D1F8A40C23BCD694A238FEE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A30601C5D104C5A27437 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1F8A44DF00DC2621C7E1C23 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A04E153FE19B54D3C6F6 /* Services */,
+				D1F8AB523A244AE053E1E182 /* Models */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
 		D1F8A540E18EB8B1D98B57B2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,11 +266,20 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		D1F8A75E1C6A972B47A69E71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A9DDCB9FF5C92A2A6B3E /* Signin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D1F8A7E61D1E5F1445851280 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
 				D1F8A0D59E88B5177D140835 /* QuickTodo */,
 				D1F8A0C12D1FF0E3C3E84106 /* Labeling */,
+				D1F8A44DF00DC2621C7E1C23 /* Operation */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -256,6 +314,13 @@
 				D1F8AE26C2EF12B3C107CEEB /* EditTaskViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D1F8AB523A244AE053E1E182 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D1F8ACDC0BF0262DC692381F /* Models */ = {
@@ -570,6 +635,9 @@
 				D1F8A625AD6B265CEEA42979 /* EditTaskViewModel.swift in Sources */,
 				D1F8A649DD5F2D03D069FC96 /* LabelService.swift in Sources */,
 				D1F8A03118F43AFB9698D14D /* LabelItem.swift in Sources */,
+				D1F8A6A9BBEEB5C9C66A19A8 /* Models.swift in Sources */,
+				D1F8A6EEF9ADC5F30393F722 /* SigninService.swift in Sources */,
+				D1F8A5356EC20AACF48C9770 /* Signin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

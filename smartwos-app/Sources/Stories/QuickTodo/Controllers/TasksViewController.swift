@@ -35,6 +35,9 @@ class TasksViewController: UIViewController, BindableType {
   var viewModel: TasksViewModel!
   var dataSource: RxTableViewSectionedAnimatedDataSource<TaskSection>!
 
+  var disposeBag = DisposeBag()
+
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -44,6 +47,26 @@ class TasksViewController: UIViewController, BindableType {
     configureDataSource()
 
     setEditing(true, animated: false)
+
+    let service = SigninService()
+    service.siginin(by: "acworth")
+        .subscribe(
+            onNext: { [weak self] items in
+//              guard items.count > 0 else {
+////                self?.alert(message: "no items fetched", title: "Fetching Items Alert")
+//              print("no items fetched")
+//                return
+//              }
+
+              print("items \(items)")
+            },
+            onError: { [weak self] error in
+//              self?.alert(message: "Error no items fetched", title: "Error Alert")
+              print("Error no items fetched")
+
+            }
+        )
+        .disposed(by:disposeBag)
   }
   
   func bindViewModel() {
