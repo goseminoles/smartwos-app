@@ -87,9 +87,7 @@ enum RestClient {
             .base64EncodedString() ?? ""
 
     let headers = [
-      "Authorization": "Basic \(base64EncodedCredential)",
-      "Accept": "application/json",
-      "Content-Type": "application/json"
+      "Authorization": "Basic \(base64EncodedCredential)"
     ]
     return headers
   }
