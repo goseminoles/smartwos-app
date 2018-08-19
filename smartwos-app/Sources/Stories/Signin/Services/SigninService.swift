@@ -28,8 +28,6 @@ class SigninService {
                   observer.onError(response.error ?? SigninFailureReason.notFound)
                   return
                 }
-
-                print("response \(response)")
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
                 let sigin = try jsonDecoder.decode(Signin.self, from: data)
