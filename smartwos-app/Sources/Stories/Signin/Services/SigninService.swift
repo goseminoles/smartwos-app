@@ -2,6 +2,10 @@ import Foundation
 import Alamofire
 import RxSwift
 
+enum SigninServiceError: Error {
+  case error
+}
+
 class SigninService {
 
   typealias Signin = Models.Signin
@@ -44,6 +48,21 @@ class SigninService {
               observer.onError(error)
             }
           }
+
+      return Disposables.create()
+    }
+  }
+
+  func signout() -> Observable<String> {
+
+    return Observable.create { observer -> Disposable in
+
+      if let signin = UserSignin.share.getUserSignin() {
+        UserSignin.share.clearUserSignin()
+        observer.onNext("Signed out successfully")
+      } else {
+        observer.onError(SigninServiceError.error)
+      }
 
       return Disposables.create()
     }
