@@ -21,12 +21,35 @@
 */
 
 import UIKit
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
+  let disposeBag = DisposeBag()
+
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+
+    // Simulate sigin
+    let signinService = SigninService()
+    signinService.siginin(by: "acworth")
+        .subscribe(
+            onNext: { signin in
+              UserSignin.share.saveUserSignin(signin: signin)
+
+              print("signin \(UserSignin.share.getUserSignin()!)")
+
+            },
+            onError: { error in
+//              self?.alert(message: "Error no items fetched", title: "Error Alert")
+              print("Error no items fetched")
+
+            }
+        )
+        .disposed(by:disposeBag)
+
+    // User signed in already
     let service = TaskService()
     let sceneCoordinator = SceneCoordinator(window: window!)
 
