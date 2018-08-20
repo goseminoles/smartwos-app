@@ -33,21 +33,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Simulate sigin
     let signinService = SigninService()
-    signinService.siginin(by: "acworth")
+    signinService.signin(by: "acworth")
         .subscribe(
             onNext: { signin in
               UserSignin.share.saveUserSignin(signin: signin)
-
               print("signin \(UserSignin.share.getUserSignin()!)")
-
             },
             onError: { error in
-//              self?.alert(message: "Error no items fetched", title: "Error Alert")
               print("Error no items fetched")
 
             }
         )
         .disposed(by:disposeBag)
+
+    // Test operation service
+    let operationService = OperationService()
+    operationService.operations()
+        .subscribe(
+            onNext: { operations in
+              print("operations \(operations)")
+            },
+            onError: { error in
+              print("Error not signed in")
+
+            }
+        )
+        .disposed(by:disposeBag)
+
+    operationService.user()
+        .subscribe(
+            onNext: { user in
+              print("user \(user)")
+            },
+            onError: { error in
+              print("Error not signed in")
+
+            }
+        )
+        .disposed(by:disposeBag)
+
 
     // User signed in already
     let service = TaskService()

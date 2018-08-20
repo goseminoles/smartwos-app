@@ -14,7 +14,7 @@ class SigninService {
 
   let client = RestClient.shared
 
-  func siginin(by passkey: String) -> Observable<Signin> {
+  func signin(by passkey: String) -> Observable<Signin> {
 
     let params: Parameters = ["passkey": passkey]
 

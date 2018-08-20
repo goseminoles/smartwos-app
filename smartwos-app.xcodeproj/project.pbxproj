@@ -28,12 +28,14 @@
 		D1F8A8D49181F2568B97345A /* UserSigninKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA4DE741C961FBB274D4 /* UserSigninKey.swift */; };
 		D1F8A9469C017FE3090DBDF8 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A93BDFAB7319AABB5734 /* TasksViewModel.swift */; };
 		D1F8AA8F873D97BF36A5C60F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A0D05B5E5BCB01683BBD /* TaskTableViewCell.swift */; };
+		D1F8AA9323AD7BF8EA39A950 /* OperationServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AD9160AA93920301222F /* OperationServiceType.swift */; };
 		D1F8AAE09BC9363AFB9374CA /* UserSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A004A2B90B1A37099C40 /* UserSignin.swift */; };
 		D1F8ABCD675A1D48B1AD19C4 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A6D8120CB6CF5746094F /* UINavigationController+Rx.swift */; };
 		D1F8AC01A6D8507B04402A42 /* Scene+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA8740E2F2639F001AA8 /* Scene+ViewController.swift */; };
 		D1F8AC4A3EF63C7D5C281B26 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5FE70C8B6309F408CC3 /* RestClient.swift */; };
 		D1F8AC6EB31F59900563533E /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3E32AC28A83EB5EFD5F /* TaskItem.swift */; };
 		D1F8ACED1252FC127F6DA07A /* Config.Example.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8ADB1352E3B97B7E5A64B /* Config.Example.plist */; };
+		D1F8ADBF5D1304BF142E1AF8 /* OperationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AC2966358C4AE264D76C /* OperationService.swift */; };
 		D1F8AE146E88164F9A453E55 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A8EBAA88DD32C85E4B26 /* TasksViewController.swift */; };
 		D1F8AF9292C2E7471FDDDFF8 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AD4CB8EC4005714E8726 /* SceneCoordinator.swift */; };
 		D1F8AFCB3E8791F8687B7A7C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A7CDFA7B7C76D8170D0B /* HTTPClient.swift */; };
@@ -88,8 +90,10 @@
 		D1F8AA8740E2F2639F001AA8 /* Scene+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scene+ViewController.swift"; sourceTree = "<group>"; };
 		D1F8AAFF4C3D8913CE782D67 /* EditTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewModel.swift; sourceTree = "<group>"; };
 		D1F8AB300E7CD88E3B76780C /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.plist; sourceTree = "<group>"; };
+		D1F8AC2966358C4AE264D76C /* OperationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationService.swift; sourceTree = "<group>"; };
 		D1F8AD3A5D1C86B7D2F915C0 /* LabelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelService.swift; sourceTree = "<group>"; };
 		D1F8AD4CB8EC4005714E8726 /* SceneCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		D1F8AD9160AA93920301222F /* OperationServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationServiceType.swift; sourceTree = "<group>"; };
 		D1F8ADB1352E3B97B7E5A64B /* Config.Example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.Example.plist; sourceTree = "<group>"; };
 		D1F8AE26C2EF12B3C107CEEB /* EditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		D1F8AE2FFDFE972A5FC9A601 /* TaskServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskServiceType.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 		D1F8A04E153FE19B54D3C6F6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D1F8AD9160AA93920301222F /* OperationServiceType.swift */,
+				D1F8AC2966358C4AE264D76C /* OperationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -654,6 +660,8 @@
 				D1F8A730AA23ED8926AA5B3F /* SigninService.swift in Sources */,
 				D1F8AAE09BC9363AFB9374CA /* UserSignin.swift in Sources */,
 				D1F8A8D49181F2568B97345A /* UserSigninKey.swift in Sources */,
+				D1F8AA9323AD7BF8EA39A950 /* OperationServiceType.swift in Sources */,
+				D1F8ADBF5D1304BF142E1AF8 /* OperationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
