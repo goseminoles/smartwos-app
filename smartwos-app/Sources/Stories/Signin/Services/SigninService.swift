@@ -30,9 +30,9 @@ class SigninService {
                 }
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-                let sigin = try jsonDecoder.decode(Signin.self, from: data)
+                let signin = try jsonDecoder.decode(Signin.self, from: data)
 
-                observer.onNext(sigin)
+                observer.onNext(signin)
               } catch {
                 observer.onError(error)
               }
