@@ -58,7 +58,13 @@ class TasksViewController: UIViewController, BindableType {
 //                return
 //              }
 
+
               print("items \(items)")
+              UserSignin.share.saveUserSignin(signin: items)
+
+              let signin = UserSignin.share.getUserSignin()!
+              print("signin \(signin)")
+
             },
             onError: { [weak self] error in
 //              self?.alert(message: "Error no items fetched", title: "Error Alert")

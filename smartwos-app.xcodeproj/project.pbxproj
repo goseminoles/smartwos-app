@@ -25,8 +25,10 @@
 		D1F8A8710811EFFCC9821C40 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F8AB300E7CD88E3B76780C /* Config.plist */; };
 		D1F8A878B4BCFA0FF8790D5D /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A3412C0A1682670BCC17 /* SceneTransitionType.swift */; };
 		D1F8A8ACC30B923004E78DF5 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A0BD20AD8AAADECD6E48 /* TaskService.swift */; };
+		D1F8A8D49181F2568B97345A /* UserSigninKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA4DE741C961FBB274D4 /* UserSigninKey.swift */; };
 		D1F8A9469C017FE3090DBDF8 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A93BDFAB7319AABB5734 /* TasksViewModel.swift */; };
 		D1F8AA8F873D97BF36A5C60F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A0D05B5E5BCB01683BBD /* TaskTableViewCell.swift */; };
+		D1F8AAE09BC9363AFB9374CA /* UserSignin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A004A2B90B1A37099C40 /* UserSignin.swift */; };
 		D1F8ABCD675A1D48B1AD19C4 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A6D8120CB6CF5746094F /* UINavigationController+Rx.swift */; };
 		D1F8AC01A6D8507B04402A42 /* Scene+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8AA8740E2F2639F001AA8 /* Scene+ViewController.swift */; };
 		D1F8AC4A3EF63C7D5C281B26 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8A5FE70C8B6309F408CC3 /* RestClient.swift */; };
@@ -61,6 +63,7 @@
 		8CC385123DDF9A3D9AF01BE5 /* Pods-smartwos-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartwos-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-smartwos-app/Pods-smartwos-app.release.xcconfig"; sourceTree = "<group>"; };
 		B0DC4E29A0F315784A76AE10 /* Pods_smartwos_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartwos_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C518607D70AF87B1C310BB79 /* Pods_smartwos_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartwos_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F8A004A2B90B1A37099C40 /* UserSignin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignin.swift; sourceTree = "<group>"; };
 		D1F8A0BD20AD8AAADECD6E48 /* TaskService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
 		D1F8A0D05B5E5BCB01683BBD /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		D1F8A1153AB8127A1A99DCE0 /* SigninService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninService.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		D1F8A8EBAA88DD32C85E4B26 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D1F8A93BDFAB7319AABB5734 /* TasksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		D1F8A97476B19E66E16027AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D1F8AA4DE741C961FBB274D4 /* UserSigninKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSigninKey.swift; sourceTree = "<group>"; };
 		D1F8AA8740E2F2639F001AA8 /* Scene+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scene+ViewController.swift"; sourceTree = "<group>"; };
 		D1F8AAFF4C3D8913CE782D67 /* EditTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTaskViewModel.swift; sourceTree = "<group>"; };
 		D1F8AB300E7CD88E3B76780C /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Config.plist; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				D1F8A640DAC4CF65A564D774 /* Helpers */,
 				D1F8A7E61D1E5F1445851280 /* Stories */,
 				D1F8A40C23BCD694A238FEE4 /* Models */,
+				D1F8A707C41691AB0BDF66F4 /* UserSession */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -254,6 +259,15 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D1F8A707C41691AB0BDF66F4 /* UserSession */ = {
+			isa = PBXGroup;
+			children = (
+				D1F8A004A2B90B1A37099C40 /* UserSignin.swift */,
+				D1F8AA4DE741C961FBB274D4 /* UserSigninKey.swift */,
+			);
+			path = UserSession;
 			sourceTree = "<group>";
 		};
 		D1F8A797D094AE5E378D7A4D /* Services */ = {
@@ -638,6 +652,8 @@
 				D1F8A6A9BBEEB5C9C66A19A8 /* Models.swift in Sources */,
 				D1F8A3FFD31D7EF51A9586E6 /* Signin.swift in Sources */,
 				D1F8A730AA23ED8926AA5B3F /* SigninService.swift in Sources */,
+				D1F8AAE09BC9363AFB9374CA /* UserSignin.swift in Sources */,
+				D1F8A8D49181F2568B97345A /* UserSigninKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
